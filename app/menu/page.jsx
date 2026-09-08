@@ -25,7 +25,7 @@ async function page({ searchParams }) {
                         </h1>
                         <div className="h-px w-20 md:w-40 bg-linear-to-l from-transparent to-white"></div>
                     </div>
-                    <p className="animate-fade-up text-white/50 text-sm md:text-2xl max-w-2xl mx-auto">
+                    <p className="animate-fade-up text-white/50 text-sm md:text-xl max-w-2xl mx-auto">
                         Embark on a Culinary Journey Through Persia and Beyond,
                         Where the Rich, Aromatic Flavors of Ancient Persian
                         Cuisine Meet the Bold, Diverse Tastes of International

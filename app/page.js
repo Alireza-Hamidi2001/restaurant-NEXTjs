@@ -71,9 +71,9 @@ function page() {
                     </Link>
                 </div>
                 <div
-                    className="hidden md:block animate-scale-in fixed bottom-[45%] z-10 md:bottom-[50%] md:translate-y-[50%] md:right-20 px-4 rounded-xl md:min-h-[20rem]
-                    w-[20rem] md:w-[25rem] border border-gray-500 backdrop-blur-[5px]">
-                    <div className="relative top-0 z-20 h-[10rem] md:h-[11rem] translate-y-[-2rem] md:translate-y-[-5rem]">
+                    className="hidden md:block animate-scale-in fixed bottom-[45%] z-10 md:bottom-[50%] md:translate-y-[50%] md:right-20 px-4 rounded-xl md:min-h-[15rem]
+                    w-[20rem] md:w-[20rem] border border-gray-500 backdrop-blur-[5px]">
+                    <div className="relative top-0 z-20 h-[10rem] md:h-[11rem]">
                         <Image
                             className="object-cover"
                             fill
