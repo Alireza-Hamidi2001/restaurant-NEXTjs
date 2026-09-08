@@ -49,7 +49,7 @@ export default async function Item({ item }) {
                         src={item.image || "/images/default-item.jpg"}
                         alt={item.name || "Menu item"}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                     />
                     {/* Badges */}
                     <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
