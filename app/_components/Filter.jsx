@@ -67,7 +67,7 @@ function Button({ filter, handleFilter, activeFilter, children }) {
             className={`flex items-center gap-1 hover:bg-red-700/40 px-2 py-1 md:px-5 md:py-2 hover:bg-primary-700 cursor-pointer transition-all duration-300 rounded-full ${
                 filter === activeFilter
                     ? " bg-red-600/60 border border-red-400 hover:bg-red-600/60 text-[0.7rem] md:text-[1rem]"
-                    : "bg-red-100/5 text-[0.7rem] md:text-[1rem]"
+                    : "bg-red-100/10 text-[0.7rem] md:text-[1rem]"
             } `}
         >
             {children}
