@@ -50,7 +50,9 @@ export default async function Item({ item }) {
                         alt={item.name || "Menu item"}
                         fill
                         className={`${
-                            item.category ? "object-contain" : "object-cover"
+                            item.category === "salad"
+                                ? "object-contain"
+                                : "object-cover"
                         }`}
                     />
                     {/* Badges */}
