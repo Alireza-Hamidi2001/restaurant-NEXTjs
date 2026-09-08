@@ -14,10 +14,20 @@
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+
+        --color-primary-800: #cccccc;
+        --color-primary-900: #999999;
+    }
+}
+
 
 .spinner {
     margin: 4.75rem auto 1.6rem auto;
-    width: 60px;
+    width: 40px;
     aspect-ratio: 1;
     border-radius: 50%;
     border: 8px solid var(--color-primary-900);
@@ -35,19 +45,11 @@
     animation: rotate 1s infinite linear;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-
-        --color-primary-800: #cccccc;
-        --color-primary-900: #999999;
-    }
-}
-
 body {
-    background: var(--background);
-    color: var(--foreground);
+    /* background: var(--background); */
+    /* color: var(--foreground); */
+    background: #0a0a0a;
+    color: #ededed;
     font-family: Arial, Helvetica, sans-serif;
 }
 

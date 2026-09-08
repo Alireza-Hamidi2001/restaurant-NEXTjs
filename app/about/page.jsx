@@ -1,19 +1,14 @@
-import Image from "next/image";
 import about_image_1 from "@/public/about-1.jpg";
-import about_image_2 from "@/public/about-2.jpg";
-import { GiChefToque } from "react-icons/gi";
-import { SiCodefresh } from "react-icons/si";
-import { FaRegHandshake } from "react-icons/fa6";
+import Image from "next/image";
+import { FaRecycle, FaRegHandshake } from "react-icons/fa6";
+import { GiChefToque, GiJourney } from "react-icons/gi";
 import { ImPower } from "react-icons/im";
-import { FaRecycle } from "react-icons/fa6";
-import { IoHeart } from "react-icons/io5";
-import { IoStarSharp } from "react-icons/io5";
+import { IoHeart, IoStarSharp } from "react-icons/io5";
+import { SiCodefresh } from "react-icons/si";
 import { TfiThought } from "react-icons/tfi";
-import { GiJourney } from "react-icons/gi";
 
 import Link from "next/link";
 import Footer from "../_components/Footer";
-import Reveal from "../_components/Reveal";
 
 export const metadata = {
     title: "About",
@@ -88,54 +83,47 @@ export default function AboutPage() {
                         Our Philosophy
                     </h2>
                     <div className="grid md:grid-cols-3 gap-8">
-                        <Reveal>
-                            <div className="text-center p-6">
-                                <div className="mb-4">
-                                    <SiCodefresh className="mx-auto w-12 h-12" />
-                                </div>
-                                <h3 className="text-xl font-semibold text-white/75 mb-2">
-                                    Fresh Ingredients
-                                </h3>
-                                <p className="text-white/50">
-                                    We source our produce daily from local farms
-                                    and import authentic Persian spices like
-                                    saffron, sumac, and advieh directly from
-                                    Iran.
-                                </p>
+                        <div className="text-center p-6">
+                            <div className="mb-4">
+                                <SiCodefresh className="mx-auto w-12 h-12" />
                             </div>
-                        </Reveal>
-                        <Reveal className="animation-delay-200">
-                            <div className="text-center p-6">
-                                <div className="mb-4">
-                                    <GiChefToque className="mx-auto w-12 h-12" />
-                                </div>
-                                <h3 className="text-xl font-semibold text-white/75 mb-2">
-                                    Artisanal Craft
-                                </h3>
-                                <p className="text-white/50">
-                                    Every dish is handcrafted with
-                                    precision—from slow-cooking our lamb shanks
-                                    for 8 hours to baking our Persian flatbreads
-                                    in a traditional clay oven.
-                                </p>
+                            <h3 className="text-xl font-semibold text-white/75 mb-2">
+                                Fresh Ingredients
+                            </h3>
+                            <p className="text-white/50">
+                                We source our produce daily from local farms and
+                                import authentic Persian spices like saffron,
+                                sumac, and advieh directly from Iran.
+                            </p>
+                        </div>
+                        <div className="text-center p-6">
+                            <div className="mb-4">
+                                <GiChefToque className="mx-auto w-12 h-12" />
                             </div>
-                        </Reveal>
-                        <Reveal className="animation-delay-400">
-                            <div className="text-center p-6">
-                                <div className="mb-4">
-                                    <FaRegHandshake className="mx-auto w-12 h-12" />
-                                </div>
-                                <h3 className="text-xl font-semibold text-white/75 mb-2">
-                                    Warm Hospitality
-                                </h3>
-                                <p className="text-white/50">
-                                    Inspired by Persian &quot; Taarof &quot;
-                                    (the art of hospitality), we treat every
-                                    guest like family, ensuring a memorable and
-                                    welcoming experience.
-                                </p>
+                            <h3 className="text-xl font-semibold text-white/75 mb-2">
+                                Artisanal Craft
+                            </h3>
+                            <p className="text-white/50">
+                                Every dish is handcrafted with precision—from
+                                slow-cooking our lamb shanks for 8 hours to
+                                baking our Persian flatbreads in a traditional
+                                clay oven.
+                            </p>
+                        </div>
+                        <div className="text-center p-6">
+                            <div className="mb-4">
+                                <FaRegHandshake className="mx-auto w-12 h-12" />
                             </div>
-                        </Reveal>
+                            <h3 className="text-xl font-semibold text-white/75 mb-2">
+                                Warm Hospitality
+                            </h3>
+                            <p className="text-white/50">
+                                Inspired by Persian &quot; Taarof &quot; (the
+                                art of hospitality), we treat every guest like
+                                family, ensuring a memorable and welcoming
+                                experience.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
