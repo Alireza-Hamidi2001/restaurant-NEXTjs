@@ -29,7 +29,7 @@ function Footer() {
                     />
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-between px-8 py-4 rounded-xl bg-white/10">
+            <div className="flex flex-col gap-6 md:gap-2 md:flex-row items-center justify-between px-8 py-4 rounded-xl bg-white/10">
                 <p>
                     © 2026 Persian Plate — Designed with passion by Alireza
                     Hamidi.
