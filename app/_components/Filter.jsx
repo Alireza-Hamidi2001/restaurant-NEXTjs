@@ -10,7 +10,7 @@ function Filter() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
-    const activeFilter = searchParams.get("category") ?? "all";
+    const activeFilter = searchParams.get("category") ?? "All";
 
     function handleFilter(filter) {
         // console.log(filter);

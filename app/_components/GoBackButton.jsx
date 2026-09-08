@@ -5,7 +5,7 @@ import { FaArrowLeft, FaHome, FaUtensils } from "react-icons/fa";
 
 function GoBackButton() {
     return (
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="grid grid-cols-3 items-center justify-center gap-2 md:gap-4">
             <Link
                 href="/"
                 className="group relative inline-flex items-center gap-2 px-5 py-4 bg-transparent text-gray-300  rounded-xl hover:text-white transition-all duration-300"
@@ -23,7 +23,7 @@ function GoBackButton() {
             </Link>
             <button
                 onClick={() => window.history.back()}
-                className="group relative inline-flex items-center gap-2 px-5 py-4 bg-transparent text-gray-300  rounded-xl hover:text-white transition-all duration-300"
+                className="group relative inline-flex items-center gap-2 px-2 md:px-5 py-2 md:py-4 bg-transparent text-gray-300  rounded-xl hover:text-white transition-all duration-300"
             >
                 <FaArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300" />
                 <span>Go Back</span>

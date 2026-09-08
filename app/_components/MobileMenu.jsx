@@ -61,7 +61,7 @@ function MobileMenu() {
                                         onClick={() => setIsOpen(false)}
                                         className={`block text-[1.8rem] rounded-4xl px-6 py-2 transition-all duration-200 hover:bg-white/20 ${
                                             pathName === menu_item.link
-                                                ? "text-white  bg-black/30"
+                                                ? "text-white  bg-red-400/60"
                                                 : "text-white/40 "
                                         }`}
                                     >
