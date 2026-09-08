@@ -71,9 +71,9 @@ function page() {
                     </Link>
                 </div>
                 <div
-                    className="animate-scale-in fixed bottom-[45%] z-10 md:bottom-[50%] md:translate-y-[50%] md:right-20 px-4 rounded-xl md:min-h-[20rem]
+                    className="bg-red-500 animate-scale-in fixed bottom-[45%] z-10 md:bottom-[50%] md:translate-y-[50%] md:right-20 px-4 rounded-xl md:min-h-[20rem]
                     w-[20rem] md:w-[25rem] border border-gray-500 backdrop-blur-[5px]">
-                    <div className="relative top-0 z-20 h-[15rem] md:h-[11rem] translate-y-[-2rem] md:translate-y-[-5rem]">
+                    <div className="relative top-0 z-20 h-[10rem] md:h-[11rem] translate-y-[-2rem] md:translate-y-[-5rem]">
                         <Image
                             className="object-cover"
                             fill
