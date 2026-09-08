@@ -40,17 +40,13 @@ export default async function Item({ item }) {
 
             <div className="grid items-center md:grid-cols-2 gap-8 p-2 md:p-6">
                 {/* Image */}
-                <div
-                    className={`${
-                        item.category === "salad" ? "h-[300px]" : "h-[300px]"
-                    } relative  rounded-2xl overflow-hidden`}
-                >
+                <div className="relative rounded-2xl h-[300px] overflow-hidden">
                     <Image
                         src={item.image || "/images/default-item.jpg"}
                         alt={item.name || "Menu item"}
                         fill
                         className={`${
-                            item.category === "salad"
+                            item.category === "salad" || "drink"
                                 ? "object-contain"
                                 : "object-cover"
                         }`}
