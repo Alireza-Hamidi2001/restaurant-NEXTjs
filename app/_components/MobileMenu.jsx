@@ -10,8 +10,8 @@ function MobileMenu() {
     const pathName = usePathname();
 
     const menu_items = [
-        { id: 1, name: "Menu", link: "/menu" },
-        { id: 2, name: "Blog", link: "/blog" },
+        { id: 1, name: "Home", link: "/" },
+        { id: 2, name: "Menu", link: "/menu" },
         { id: 3, name: "About Us", link: "/about" },
         { id: 4, name: "Contact", link: "/contact" },
     ];
