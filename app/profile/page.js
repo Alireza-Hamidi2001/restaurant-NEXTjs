@@ -10,19 +10,18 @@ async function page() {
     const avatar = session?.user.image || user_avatar;
 
     return (
-        <div className="p-16 relative h-[calc(100vh-3.75rem)] mt-15">
-            <div className="absolute rounded-xl top-4 left-4 w-48 h-48 bg-white/10"></div>
-            <div className="absolute rounded-full top-32 left-32 w-48 h-48 bg-white/8"></div>
-            <div className="absolute rounded-xl bottom-4 left-4 w-32 h-32 bg-white/7"></div>
-            <div className="absolute rounded-3xl bottom-4 right-4 w-32 h-32 bg-white/6"></div>
-            <div className="absolute rounded-lg bottom-32 right-32 w-64 h-64 bg-white/5"></div>
-            <div className="absolute rounded-full right-0 w-32 h-32 bg-white/4"></div>
+        <div className="flex flex-col gap-4 items-center md:grid md:grid-cols-[auto_1fr] md:items-start p-2 pt-16 md:p-16 relative h-[calc(100vh-3.75rem)] mt-15">
+            <div className="absolute rounded-xl top-4 left-4 w-32 h-32 bg-white/10"></div>
+            <div className="absolute rounded-full top-32 left-32 w-32 h-32 bg-white/8"></div>
+            <div className="absolute rounded-xl bottom-4 left-4 w-24 h-24 bg-white/7"></div>
+            <div className="absolute rounded-3xl bottom-4 right-4 w-24 h-24 bg-white/6"></div>
+            <div className="absolute rounded-lg bottom-32 right-32 w-48 h-48 bg-white/5"></div>
+            <div className="absolute rounded-full right-0 w-24 h-24 bg-white/4"></div>
             <div className="absolute rounded-5xl right-[60%] bottom-[50%] translate-x-[50%] translate-y-[50%] w-64 h-64 bg-white/5"></div>
             <div className="absolute rounded-full left-[50%] top-[50%] -translate-[50%_50%]  w-48 h-48 bg-white/2"></div>
             <div className="absolute rounded-full right-[50%] bottpm-[50%] w-48 h-48 bg-white/10"></div>
 
-            {/* divider */}
-            <div className="relative flex flex-col max-w-fit backdrop-blur-[8px] border border-white/20 rounded-xl px-4">
+            <div className="flex flex-col max-w-fit backdrop-blur-[6px] border border-white/20 rounded-lg px-4">
                 <div className=" mx-auto absolute translate-x-[-50%] left-[50%] top-[-20%] h-24 w-24">
                     {session?.user.image ? (
                         <Image
@@ -58,6 +57,9 @@ async function page() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="flex backdrop-blur-[6px] border border-white/20 rounded-lg px-4 py-2">
+                Welcome,<span className="font-extrabold ">&nbsp; {session?.user.name}</span>
             </div>
         </div>
     );
