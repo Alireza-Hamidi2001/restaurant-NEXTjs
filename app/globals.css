@@ -16,7 +16,7 @@
 }
 
 .spinner {
-    margin: 3.2rem auto 1.6rem;
+    margin: 4.75rem auto 1.6rem auto;
     width: 60px;
     aspect-ratio: 1;
     border-radius: 50%;

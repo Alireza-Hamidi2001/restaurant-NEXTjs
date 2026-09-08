@@ -42,7 +42,7 @@ function MobileMenu() {
 
             {/* Full Screen Overlay */}
             {isOpen && (
-                <div className="fixed inset-0 z-[9999] bg-black/20 h-screen backdrop-blur-[10px] md:hidden">
+                <div className="fixed inset-0 z-50 bg-black/20 h-screen backdrop-blur-2xl md:hidden">
                     {/* Close Button */}
                     <button
                         onClick={() => setIsOpen(false)}
@@ -59,10 +59,10 @@ function MobileMenu() {
                                     <Link
                                         href={menu_item.link}
                                         onClick={() => setIsOpen(false)}
-                                        className={`block text-[1.8rem] rounded-4xl px-8 py-3 transition-all duration-200 hover:bg-white/20 ${
+                                        className={`block text-[1.8rem] rounded-4xl px-6 py-2 transition-all duration-200 hover:bg-white/20 ${
                                             pathName === menu_item.link
-                                                ? "bg-white/30"
-                                                : ""
+                                                ? "text-white  bg-black/30"
+                                                : "text-white/40 "
                                         }`}
                                     >
                                         {menu_item.name}
@@ -75,7 +75,7 @@ function MobileMenu() {
                         <Link
                             href="/login"
                             onClick={() => setIsOpen(false)}
-                            className="mt-8 flex items-center gap-2 rounded-4xl px-8 py-3 text-[2.5rem] transition-all duration-200 hover:bg-white/20"
+                            className="mt-8 flex items-center gap-2 rounded-4xl px-6 py-2 text-[1.8rem] transition-all duration-200 hover:bg-white/20"
                         >
                             <FiLogIn />
                             Login

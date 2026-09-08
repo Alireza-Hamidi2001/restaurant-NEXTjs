@@ -1,8 +1,7 @@
-import { FiLogIn } from "react-icons/fi";
-import ProfileDropdown from "./ProfileDropdown";
-import Image from "next/image";
-import { auth } from "../_lib/auth";
 import Link from "next/link";
+import { FiLogIn } from "react-icons/fi";
+import { auth } from "../_lib/auth";
+import ProfileDropdown from "./ProfileDropdown";
 
 async function LoginComponent() {
     const session = await auth();
