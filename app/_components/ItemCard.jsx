@@ -67,7 +67,11 @@ export default async function ItemCard({ filter = "all" }) {
                                     src={item.image || image_demo}
                                     alt={item.name || "Menu item"}
                                     fill
-                                    className="object-cover"
+                                    className={`${
+                                        item.category === "salad" || "drink"
+                                            ? "object-contain"
+                                            : "object-cover"
+                                    }`}
                                 />
                                 {/* Badges */}
                                 <div className="absolute top-3 right-3 flex gap-2 flex-wrap">
