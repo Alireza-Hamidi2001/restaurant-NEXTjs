@@ -38,7 +38,7 @@ export default async function Item({ item }) {
                 </Link>
             </div>
 
-            <div className="grid items-center md:grid-cols-2 gap-8 p-6">
+            <div className="grid items-center md:grid-cols-2 gap-8 p-2 md:p-6">
                 {/* Image */}
                 <div className="relative h-[300px] rounded-2xl overflow-hidden">
                     <Image
@@ -69,21 +69,23 @@ export default async function Item({ item }) {
 
                 {/* Details */}
                 <div className="flex flex-col">
-                    <h1 className="-translate-x-24 rounded-[4px] text-3xl md:text-6xl bg-white/10 backdrop-blur-[7px] p-8 font-bold text-white mb-4">
+                    <h1 className="md:-translate-x-24 rounded-[4px] text-5xl md:text-6xl bg-white/10 backdrop-blur-[7px] p-3 md:p-6 font-bold text-white mb-4">
                         {item.name}
                     </h1>
 
                     <span
-                        className={`${betania.className} text-amber-200 font-bold text-6xl`}
+                        className={`${betania.className} text-amber-200 font-bold text-6xl my-4`}
                     >
                         {item.currency || "$"}
                         {item.price?.toFixed(2) || "0.00"}
                     </span>
 
-                    <p className="text-white text-lg my-6">
-                        <p className="text-white/50 text-sm">Known as:</p>
-                        &bull; {item.slug || ""}
-                    </p>
+                    {item.slug && (
+                        <p className="text-white text-lg my-3">
+                            <p className="text-white/50 text-sm">Known as:</p>
+                            &bull; {item.slug || ""}
+                        </p>
+                    )}
 
                     {/* Category */}
                     {item.category && (
