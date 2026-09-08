@@ -42,14 +42,16 @@ export default async function Item({ item }) {
                 {/* Image */}
                 <div
                     className={`${
-                        item.category === "salad" ? "h-[200px]" : "h-[300px]"
+                        item.category === "salad" ? "h-[300px]" : "h-[300px]"
                     } relative  rounded-2xl overflow-hidden`}
                 >
                     <Image
                         src={item.image || "/images/default-item.jpg"}
                         alt={item.name || "Menu item"}
                         fill
-                        className="object-contain"
+                        className={`${
+                            item.category ? "object-contain" : "object-cover"
+                        }`}
                     />
                     {/* Badges */}
                     <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
