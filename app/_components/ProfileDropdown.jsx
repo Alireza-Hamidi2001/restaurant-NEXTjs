@@ -16,6 +16,7 @@ import { sighnOutAction } from "../_lib/action";
 
 function ProfileDropdown({ session }) {
     const [dropdownShow, setDropdownShow] = useState(false);
+    
     function handleDropdownHandler() {
         setDropdownShow((prev) => !prev);
     }
